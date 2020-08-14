@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Add Faculty</title>
+    <title>Edit Faculty Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -268,6 +268,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="../company/company_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Companies
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
@@ -388,13 +396,13 @@
                                                     </div>
 
                                                     <div class="col-md-2">
-                                                        <label for="dateofbirth">Date Of Joining</label>
+                                                        <label for="dateofjoining">Date Of Joining</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
                                                                 <span class="input-group-text"><i
                                                                         class="far fa-calendar-alt"></i></span>
                                                             </div>
-                                                            <input id="datemask" type="text" class="form-control"
+                                                            <input id="dateofjoining" type="text" class="form-control datemask"
                                                                 data-inputmask-alias="datetime"
                                                                 data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                                         </div>
@@ -454,7 +462,7 @@
                                                                 <span class="input-group-text"><i
                                                                         class="far fa-calendar-alt"></i></span>
                                                             </div>
-                                                            <input type="text" class="form-control"
+                                                            <input id="dateofbirth" type="text" class="form-control datemask"
                                                                 data-inputmask-alias="datetime"
                                                                 data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                                         </div>
@@ -495,12 +503,12 @@
                                                         <div class="form-group">
                                                             <div>
                                                                 <label for="contact1">Contact No</label>
-                                                                <input type="number" class="form-control" id="contact1"
+                                                                <input type="tel" class="form-control" id="contact1"
                                                                     placeholder="Contact No">
                                                             </div>
                                                             <div>
                                                                 <label for="contact2">Phone No</label>
-                                                                <input type="number" class="form-control" id="contact2"
+                                                                <input type="tel" class="form-control" id="contact2"
                                                                     placeholder="Phone No">
                                                             </div>
                                                         </div>
@@ -553,12 +561,12 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Select2 -->
     <script src="../../plugins/select2/js/select2.full.min.js"></script>
     <!-- InputMask -->
@@ -566,17 +574,15 @@
     <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
     <script src="../../plugins/inputmask/jquery.inputmask.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
-    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Summernote -->
-    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>
+    <script src="../../dist/js/adminlte.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
+    <script src="../../dist/js/demo.js"></script>
 
     <script>
         $(function () {
@@ -589,7 +595,7 @@
             })
 
             //Datemask dd/mm/yyyy
-            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            $('.datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
         })
     </script>
 </body>

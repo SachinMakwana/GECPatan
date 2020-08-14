@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Add Faculty</title>
+    <title>Faculty Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -337,12 +337,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Add New Faculty</h1>
-                        </div><!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <a href="faculty_view.html" class="btn btn-block btn-primary">Back To Details</a>
-                            </ol>
+                            <h1 class="m-0 text-dark">Faculty Details</h1>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -367,7 +362,7 @@
                                                     <div class="col-md-1">
                                                         <label for="ddlprefix">Prefix</label>
                                                         <select class="form-control select2" style="width: 100%;"
-                                                            id="ddlprefix">
+                                                            id="ddlprefix" disabled>
                                                             <option selected="selected">Mr</option>
                                                             <option>Mr</option>
                                                             <option>Ms</option>
@@ -380,19 +375,19 @@
                                                     <div class="col-md-3">
                                                         <label for="fname">First Name</label>
                                                         <input type="text" class="form-control" id="fname"
-                                                            placeholder="First Name">
+                                                            placeholder="First Name" disabled>
                                                     </div>
 
                                                     <div class="col-md-3">
                                                         <label for="lname">Last Name</label>
                                                         <input type="text" class="form-control" id="lname"
-                                                            placeholder="Last Name">
+                                                            placeholder="Last Name" disabled>
                                                     </div>
 
                                                     <div class="col-md-3">
                                                         <label for="surname">Surname</label>
                                                         <input type="text" class="form-control" id="surname"
-                                                            placeholder="Surname">
+                                                            placeholder="Surname" disabled>
                                                     </div>
 
                                                     <div class="col-md-2">
@@ -402,10 +397,9 @@
                                                                 <span class="input-group-text"><i
                                                                         class="far fa-calendar-alt"></i></span>
                                                             </div>
-                                                            <input id="dateofjoining" type="text"
-                                                                class="form-control datemask"
+                                                            <input id="dateofjoining" type="text" class="form-control datemask"
                                                                 data-inputmask-alias="datetime"
-                                                                data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                                                data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -416,7 +410,7 @@
                                                     <div class="col-md-2">
                                                         <label for="ddldesgn">Designation</label>
                                                         <select class="form-control select2" style="width: 100%;"
-                                                            id="ddldesgn">
+                                                            id="ddldesgn" disabled>
                                                             <option selected="selected">Professor</option>
                                                             <option>Professor</option>
                                                             <option>HOD</option>
@@ -426,19 +420,19 @@
                                                     <div class="col-md-2">
                                                         <label for="qual">Qualification</label>
                                                         <input type="text" class="form-control" id="qual"
-                                                            placeholder="M.E.">
+                                                            placeholder="M.E." disabled>
                                                     </div>
 
                                                     <div class="col-md-3">
                                                         <label for="exp">Experience</label>
                                                         <input type="text" class="form-control" id="exp"
-                                                            placeholder="2 Years">
+                                                            placeholder="2 Years" disabled>
                                                     </div>
 
                                                     <div class="col-md-4">
                                                         <label for="exp">Area Of Interest</label>
                                                         <input type="text" class="form-control" id="exp"
-                                                            placeholder="AI And ML">
+                                                            placeholder="AI And ML" disabled>
                                                     </div>
                                                 </div>
                                             </div>
@@ -448,7 +442,7 @@
                                                     <div class="col-md-2">
                                                         <label for="ddlgender">Gender</label>
                                                         <select class="form-control select2" style="width: 100%;"
-                                                            id="ddlgender">
+                                                            id="ddlgender" disabled>
                                                             <option selected="selected">Other</option>
                                                             <option>Male</option>
                                                             <option>Female</option>
@@ -463,17 +457,16 @@
                                                                 <span class="input-group-text"><i
                                                                         class="far fa-calendar-alt"></i></span>
                                                             </div>
-                                                            <input id="dateofbirth" type="text"
-                                                                class="form-control datemask"
+                                                            <input id="dateofbirth" type="text" class="form-control datemask"
                                                                 data-inputmask-alias="datetime"
-                                                                data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                                                data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-md-2">
                                                         <label for="maritialstatus">Maritial Status</label>
                                                         <select class="form-control select2" style="width: 100%;"
-                                                            id="maritialstatus">
+                                                            id="maritialstatus" disabled>
                                                             <option selected="selected">Other</option>
                                                             <option>Married</option>
                                                             <option>Unmarried</option>
@@ -483,7 +476,7 @@
                                                     <div class="col-md-3">
                                                         <label for="department">Department</label>
                                                         <select class="form-control select2" style="width: 100%;"
-                                                            id="department">
+                                                            id="department" disabled>
                                                             <option selected="selected">Computer</option>
                                                             <option>Civil</option>
                                                             <option>Electrical</option>
@@ -494,7 +487,7 @@
                                                     <div class="col-md-3">
                                                         <label for="email">Email Address</label>
                                                         <input type="email" class="form-control" id="email"
-                                                            placeholder="gecp@gmail.com">
+                                                            placeholder="gecp@gmail.com" disabled>
                                                     </div>
                                                 </div>
                                             </div>
@@ -506,12 +499,12 @@
                                                             <div>
                                                                 <label for="contact1">Contact No</label>
                                                                 <input type="tel" class="form-control" id="contact1"
-                                                                    placeholder="Contact No">
+                                                                    placeholder="Contact No" disabled>
                                                             </div>
                                                             <div>
                                                                 <label for="contact2">Phone No</label>
                                                                 <input type="tel" class="form-control" id="contact2"
-                                                                    placeholder="Phone No">
+                                                                    placeholder="Phone No" disabled>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -519,7 +512,7 @@
                                                     <div class="col-md-6">
                                                         <label for="address">Address</label>
                                                         <textarea type="text" class="form-control" id="address" rows="4"
-                                                            placeholder="24, Sardar Society, NR. Rajesh Tower, Gotri, Vadodara - 380061"></textarea>
+                                                            placeholder="24, Sardar Society, NR. Rajesh Tower, Gotri, Vadodara - 380061" disabled></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -529,10 +522,10 @@
 
                                     <div class="card-footer">
                                         <div class="input-group col-12">
-                                            <div class="col-sm-6"><button type="submit"
-                                                    class="btn btn-primary float-right col-md-2">Submit</button></div>
-                                            <div class="col-sm-6"><button type="clear"
-                                                    class="btn btn-primary col-md-2">Clear</button></div>
+                                            <div class="col-sm-6"><a href="./faculty_edit.html"
+                                                    class="btn btn-primary float-right col-md-3">Edit Details</a></div>
+                                            <div class="col-sm-6"><a href="./faculty_view.html"
+                                                    class="btn btn-primary col-md-2">Back</a></div>
                                         </div>
                                     </div>
                                 </form>
