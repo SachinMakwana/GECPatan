@@ -53,8 +53,7 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                        aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -75,8 +74,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 mr-3 img-circle">
+                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -92,8 +90,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -109,8 +106,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -167,8 +163,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../../index3.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
             </a>
 
@@ -186,8 +181,7 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <!--  <li class="nav-item has-treeview menu-open">
@@ -338,15 +332,21 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Add New Placement Details</h1>
-                        </div><!-- /.col -->
+                        </div>
+                        <!-- /.col -->
                         <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <a href="../placement/placement_view.html" class="btn btn-block btn-primary">Back To
-                                    Details</a>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+                            <a href="../placement/placement_view.html">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
+                                    <li>Back To Details</li>
+                                </ol>
+                            </a>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
 
@@ -368,8 +368,7 @@
                                                         <div class="input-group">
                                                             <div class="col-md-6">
                                                                 <label for="ddlCompany">Company Name</label>
-                                                                <select class="form-control select2"
-                                                                    style="width: 100%;" id="ddlCompany">
+                                                                <select class="form-control select2" style="width: 100%;" id="ddlCompany">
                                                                     <option selected="selected" disabled>Select Company
                                                                     </option>
                                                                     <option>Microsoft</option>
@@ -382,8 +381,7 @@
 
                                                             <div class="col-md-6">
                                                                 <label for="ddlDepartment">Department Name</label>
-                                                                <select class="form-control select2"
-                                                                    style="width: 100%;" id="ddlDepartment">
+                                                                <select class="form-control select2" style="width: 100%;" id="ddlDepartment">
                                                                     <option>Computer</option>
                                                                     <option>Civil</option>
                                                                     <option>Mechanical</option>
@@ -398,21 +396,17 @@
                                                         <div class="input-group">
                                                             <div class="col-md-3">
                                                                 <label for="studentTaken">Students Taken</label>
-                                                                <input type="number" class="form-control"
-                                                                    id="studentTaken"
-                                                                    placeholder="No. Of Students Taken">
+                                                                <input type="number" class="form-control" id="studentTaken" placeholder="No. Of Students Taken">
                                                             </div>
 
                                                             <div class="col-md-3">
                                                                 <label for="lowestPackage">Lowest Package</label>
-                                                                <input type="number" class="form-control"
-                                                                    id="lowestPackage" placeholder="Lowest Package">
+                                                                <input type="number" class="form-control" id="lowestPackage" placeholder="Lowest Package">
                                                             </div>
 
                                                             <div class="col-md-3">
                                                                 <label for="highestPackage">Highest Package</label>
-                                                                <input type="number" class="form-control"
-                                                                    id="highestPackage" placeholder="Highest Package">
+                                                                <input type="number" class="form-control" id="highestPackage" placeholder="Highest Package">
                                                             </div>
 
                                                             <div class="col-md-3">
@@ -422,11 +416,7 @@
                                                                         <span class="input-group-text"><i
                                                                                 class="far fa-calendar-alt"></i></span>
                                                                     </div>
-                                                                    <input id="dateofcampus" type="text"
-                                                                        class="form-control datemask"
-                                                                        data-inputmask-alias="datetime"
-                                                                        data-inputmask-inputformat="dd/mm/yyyy"
-                                                                        data-mask>
+                                                                    <input id="dateofcampus" type="text" class="form-control datemask" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -439,10 +429,8 @@
 
                                     <div class="card-footer">
                                         <div class="input-group col-12">
-                                            <div class="col-sm-6"><button type="submit"
-                                                    class="btn btn-primary float-right col-md-2">Submit</button></div>
-                                            <div class="col-sm-6"><button type="clear"
-                                                    class="btn btn-primary col-md-2">Clear</button></div>
+                                            <div class="col-sm-6"><button type="submit" class="btn btn-primary float-right col-md-2">Submit</button></div>
+                                            <div class="col-sm-6"><button type="clear" class="btn btn-primary col-md-2">Clear</button></div>
                                         </div>
                                     </div>
                                 </form>
@@ -451,14 +439,14 @@
 
                         </div>
                     </div>
-                </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-            All rights reserved.
+            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.0.5
             </div>
@@ -497,7 +485,7 @@
     <script src="../../dist/js/demo.js"></script>
 
     <script>
-        $(function () {
+        $(function() {
             //Initialize Select2 Elements
             $('.select2').select2()
 
@@ -507,7 +495,9 @@
             })
 
             //Datemask dd/mm/yyyy
-            $('.datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            $('.datemask').inputmask('dd/mm/yyyy', {
+                'placeholder': 'dd/mm/yyyy'
+            })
 
             $('.textarea').summernote()
         })

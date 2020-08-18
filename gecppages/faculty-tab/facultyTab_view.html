@@ -15,19 +15,16 @@
     <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
+    <!-- custom css -->
     <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 
@@ -52,8 +49,7 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                        aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -74,8 +70,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 mr-3 img-circle">
+                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -91,8 +86,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -108,8 +102,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar"
-                                    class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -166,8 +159,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../../index3.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
             </a>
 
@@ -185,8 +177,7 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <!--  <li class="nav-item has-treeview menu-open">
@@ -337,15 +328,21 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark">Faculty Tabs</h1>
-                        </div><!-- /.col -->
+                        </div>
+                        <!-- /.col -->
                         <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <a href="../faculty-tab/facultyTab_add.html" class="btn btn-block btn-primary">Add New
-                                    Tabs</a>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+                            <a href="../faculty-tab/facultyTab_add.html">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
+                                    <li>Add New Tabs</li>
+                                </ol>
+                            </a>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
 
@@ -373,100 +370,114 @@
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Educational Details</td>
                                                 <td>Dr. Sanjay V Patel</td>
-                                                <td><a href="../faculty-tab/facultyTab_add.html"
-                                                        class="nav-link">Edit</a></td>
-                                                <td><a href="3" class="nav-link">Delete</a></td>
+                                                <td>
+                                                    <a href="../faculty-tab/facultyTab_add.html" class="nav-icon fas fa-edit"></a>
+                                                </td>
+                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
@@ -484,14 +495,14 @@
                         </div>
                     </div>
                     <!-- /.card -->
-                </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-            All rights reserved.
+            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.0.5
             </div>
@@ -521,7 +532,7 @@
     <script src="../../dist/js/demo.js"></script>
     <!-- page script -->
     <script>
-        $(function () {
+        $(function() {
             $("#example1").DataTable({
                 "responsive": true,
                 "autoWidth": false,
