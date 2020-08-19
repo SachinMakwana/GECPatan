@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | College Details</title>
+  <title>VIEW DEPARTMENT DETAILS</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,11 +18,8 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <style>
-      td,th{
-          text-align:center;
-      }
-  </style>
+   <!--custom css-->
+   <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -314,11 +311,15 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <!-- <h1>College Details</h1> -->
+            <h1>Department Details</h1>
+            <ol class="breadcrumb float-sm-right" style="margin-right:-543px; margin-top: -50px;">
+              <li><a href="dept_add.html"><i class="nav-icon fas fa-plus-circle"></i> </a></li>
+              <li><a href="dept_add.html">Click to add details</a></li>
+            </ol>
           </div>
           <div class="container-fluid">
   <!-- <div class="row">
@@ -346,11 +347,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h1 class="card-title" style="font-size: 25px;">DATATABLE FOR DEPARTMENT DETAILS</h1>
-                <ol class="breadcrumb float-sm-right">
-                    <li><a href="dept_add.html"><i class="nav-icon fas fa-plus-circle"></i> </a></li>
-                    <li><a href="dept_add.html">Click to add details</a></li>
-                  </ol>
+                <h1 class="card-title" style="font-size: 25px;">List Of Departments</h1>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -473,11 +470,11 @@
 <!-- page script -->
 <script>
   $(function () {
-    $("#example1").DataTable({
+    $("#example2").DataTable({
       "responsive": true,
       "autoWidth": false,
     });
-    $('#example2').DataTable({
+    $('#example1').DataTable({
       "paging": true,
       "lengthChange": false,
       "searching": false,
