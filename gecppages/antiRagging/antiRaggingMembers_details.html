@@ -4,27 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>View Anti-Ragging Cell Details</title>
+    <title> View Anti-Ragging Members Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- DataTables -->
     <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <style>
-        td,
-        th {
-            text-align: center;
-        }
-    </style>
+    <!-- custom css -->
+    <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -38,7 +39,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="../../index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -161,7 +162,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="../../index3.html" class="brand-link">
                 <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -183,8 +184,9 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
+
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../../index3.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Dashboard
@@ -216,7 +218,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../faculty/faculty_view.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Faculty
@@ -232,22 +234,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../company/company_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Companies
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Placement cell
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="antiRagging_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Anti-Ragging cell
-                                </p>
-                            </a>
-                        </li>
-
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
@@ -261,14 +262,6 @@
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Gallery
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Attachments
                                 </p>
                             </a>
                         </li>
@@ -296,7 +289,23 @@
                                 </p>
                             </a>
                         </li>
-                        i> -->
+                        <li class="nav-item">
+                            <a href="placementMember_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Placement Members
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="antiRagging_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Anti-Ragging
+                                </p>
+                            </a>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -311,16 +320,22 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">View Anti-Ragging cell Details</h1>
-                        </div><!-- /.col -->
+                            <h1 class="m-0 text-dark">Anti-Ragging Cell Members List</h1>
+                        </div>
+                        <!-- /.col -->
                         <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li><a href="antiRagging_add.html"><i class="nav-icon fas fa-plus-circle">Click to
-                                            add Anti-Ragging cell details</i></a></li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+                            <a href="antiRagging_add.html">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
+                                    <li>Add New Member</li>
+                                </ol>
+                            </a>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
 
@@ -330,152 +345,131 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Anti-Raggingell Members Details</h3>
+                                </div>
                                 <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Committee Name</th>
-                                                <th>Role</th>
-                                                <th>View</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sunil Patel</td>
-                                                <td>Commettee Head</td>
-                                                <td><a href=""><i class="nav-icon fas fa-eye"></i></a>
-                                                </td>
-                                                <td><a href="antiRagging_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a>
-                                                </td>
-
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Committee Name</th>
-                                                <th>Role</th>
-                                                <th>View</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                        </tfoot>
-
-                                    </table>
-
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <table id="example1" class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Member Name</th>
+                                                        <th>Role</th>
+                                                        <th>Designation</th>
+                                                        <th>Department</th>
+                                                        <th>View</th>
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="antiRagging_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="antiRagging_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="antiRagging_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="antiRagging_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="antiRagging_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Member Name</th>
+                                                        <th>Role</th>
+                                                        <th>Designation</th>
+                                                        <th>Department</th>
+                                                        <th>View</th>
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
                                 </div>
                             </div>
-                            <!--ur contents here-->
                         </div>
                     </div>
+                    <!-- /.card -->
                 </div>
+                <!-- /.container-fluid -->
             </section>
-        </div><!-- /.container-fluid -->
-
-        <!-- /.content -->
-    </div>
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
+
 
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -490,20 +484,12 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+    <!-- page script -->
     <script>
         $(function () {
             $("#example1").DataTable({
                 "responsive": true,
                 "autoWidth": false,
-            });
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
             });
         });
     </script>
