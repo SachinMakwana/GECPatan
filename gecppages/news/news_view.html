@@ -3,31 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Widgets</title>
+  <title>VIEW NEWS DETAILS</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-    <!-- summernote -->
-  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-  <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!--custom css-->
+  <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -157,7 +149,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
+    <a href="../../index.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png"
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
@@ -167,7 +159,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
+      <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -180,44 +172,44 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-           
-          <li class="nav-item">
+            <li class="nav-item">
             <a href="../../index.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../about college/aboutdata.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../about college/about_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 About College
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../campus/campus_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Campus
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../department/dept_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Department
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../faculty/faculty_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Faculty
               </p>
@@ -225,39 +217,39 @@
           </li>
            <li class="nav-item">
             <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Lab and Workshps
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../placement/placement_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Placement cell
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../subject/subject_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Subject list
               </p>
             </a>
           </li>
            <li class="nav-item">
-            <a href="../gallery/gallerydata.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../gallery/gallery_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Gallery
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="imagesdata.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="../images/images_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Images
               </p>
@@ -265,15 +257,32 @@
           </li>
            <li class="nav-item">
             <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Achievements
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="../about college/about_add.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Women Grievance Cell
+              </p>
+            </a>
+          </li>
+      </li>
+      <li class="nav-item">
+        <a href="../about college/about_add.html" class="nav-link">
+          <i class="nav-icon fas fa-table"></i>
+          <p>
+            Anti Ragging
+          </p>
+        </a>
+      </li>
            <li class="nav-item">
-            <a href="../news/newsdata.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="news_view.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 News
               </p>
@@ -281,99 +290,126 @@
           </li>
            <li class="nav-item">
             <a href="widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-table"></i>
               <p>
                 Contact us
               </p>
             </a>
           </li>
           
+            
+        </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
 
-<!-- Content Wrapper. Contains page content -->
-
-<div class="content-wrapper">
-  <h1 style="margin-left: 15px;">ADD IMAGES FOR CLASSROOMS/DEPARTMENTS:</h1>
-<section class="content">
-  <div class="container-fluid">
-    <div class="card card-default" style="margin-bottom: 1px;">
-  <div class="card-body" style="padding: 11px;">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="form-group">
-                  <label>Enter Category:</label>
-                  <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">Alabama</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>
-                  </select>
-              </div>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+             <h1>News Details</h1>
+             <ol class="breadcrumb float-sm-right" style="margin-right:-543px; margin-top: -50px;">
+              <li><a href="news_add.html"><i class="nav-icon fas fa-plus-circle"></i> </a></li>
+              <li><a href="news_add.html">Click to add details</a></li>
+            </ol>
           </div>
-      </div>
-  </div>
-</div>
-
-<div class="row" style="margin-right: -1088px;">
-  <div class="col-md-6">
-    <div class="card card-warning" style="margin-bottom: 1px;">
-      <div class="card-body" style="padding: 11px;">
-          <div class="form-group">
-                <label for="exampleInputFile">Choose image:</label>
-                  <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose Image to upload</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text" id="">Upload</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-primary">Clear</button>
-                  </div>
+          <div class="container-fluid">
+  <!-- <div class="row">
+   <form>
+    <button type="submit" class="btn btn-info" style="margin-left: 916px;margin-top: -56px;"><a href="about.html" style="color: white;">ADD NEW DETAILS</a></button>
                   
+        
+        </form>
+</div>
+</div> -->
+          <!-- <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">DataTables</li>
+            </ol>
+          </div> -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title" style="font-size: 25px;">List Of News Details</h1>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>News Link</th>
+                    <th>Image</th>
+                    <th>View All Details</th>
+                    <th>Edit Details</th>
+                    <th>Delete Details</th>
+                    
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>COVID NEWS</td>
+                    <td>news link</td>
+                    <td>news Image</td>
+                    <td><i class="nav-icon fas fa-eye"></i></td>
+                    <td><a href="news_add.html"><i class="nav-icon fas fa-edit"></i></a></td>
+                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Holiday news</td>
+                    <td>news link</td>
+                    <td>news Image</td>
+                    <td><i class="nav-icon fas fa-eye"></i></td>
+                    <td><a href="news_add.html"><i class="nav-icon fas fa-edit"></i></a></td>
+                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                    
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>Title</th>
+                    <th>News Link</th>
+                    <th>Image</th>
+                    <th>View All Details</th>
+                    <th>Edit Details</th>
+                    <th>Delete Details</th>
                   
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
 
+            
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
       </div>
-    </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
   </div>
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-</section>
-
-
-
-
-  <!-- /.content-wrapper -->
-
-<!--   <footer class="main-footer">
-    <div class="float-right d-none d-sm-block"> -->
-     <!--  <b>Version</b> 3.0.5
-    </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved. -->
- <!--  </footer> -->
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -383,112 +419,35 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<!-- bs-custom-file-input -->
-<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<script src="../../plugins/select2/js/select2.full.min.js"></script>
-<script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-<!-- InputMask -->
-<script src="../../plugins/moment/moment.min.js"></script>
-<script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-<!-- date-range-picker -->
-<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap color picker -->
-<script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Bootstrap Switch -->
-<script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- page script -->
 <script>
   $(function () {
-    // Summernote
-    $('.textarea').summernote()
-  })
-</script>
-<script type="text/javascript">
-$(document).ready(function () {
-  bsCustomFileInput.init();
-});
-</script>
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $('.select2').select2()
-
-    //Initialize Select2 Elements
-    $('.select2bs4').select2({
-      theme: 'bootstrap4'
-    })
-
-    //Datemask dd/mm/yyyy
-    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
-    //Datemask2 mm/dd/yyyy
-    $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
-    //Money Euro
-    $('[data-mask]').inputmask()
-
-    //Date range picker
-    $('#reservationdate').datetimepicker({
-        format: 'L'
+    $("#example2").DataTable({
+      "responsive": true,
+      "autoWidth": false,
     });
-    //Date range picker
-    $('#reservation').daterangepicker()
-    //Date range picker with time picker
-    $('#reservationtime').daterangepicker({
-      timePicker: true,
-      timePickerIncrement: 30,
-      locale: {
-        format: 'MM/DD/YYYY hh:mm A'
-      }
-    })
-    //Date range as a button
-    $('#daterange-btn').daterangepicker(
-      {
-        ranges   : {
-          'Today'       : [moment(), moment()],
-          'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-          'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-          'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        },
-        startDate: moment().subtract(29, 'days'),
-        endDate  : moment()
-      },
-      function (start, end) {
-        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-      }
-    )
-
-    //Timepicker
-    $('#timepicker').datetimepicker({
-      format: 'LT'
-    })
-    
-    //Bootstrap Duallistbox
-    $('.duallistbox').bootstrapDualListbox()
-
-    //Colorpicker
-    $('.my-colorpicker1').colorpicker()
-    //color picker with addon
-    $('.my-colorpicker2').colorpicker()
-
-    $('.my-colorpicker2').on('colorpickerChange', function(event) {
-      $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+    $('#example1').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
     });
-
-    $("input[data-bootstrap-switch]").each(function(){
-      $(this).bootstrapSwitch('state', $(this).prop('checked'));
-    });
-
-  })
+  });
 </script>
 </body>
 </html>
