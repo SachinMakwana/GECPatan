@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Add Achievements </title>
+    <title> View Grievance Cell Members Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -15,18 +15,17 @@
     <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- custom css -->
+    <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -40,7 +39,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="../../index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -163,7 +162,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="../../index3.html" class="brand-link">
                 <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -187,7 +186,7 @@
                         data-accordion="false">
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../../index3.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Dashboard
@@ -203,7 +202,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../campus/campus_view.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Campus
@@ -219,7 +218,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../faculty/faculty_view.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Faculty
@@ -235,7 +234,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="../company/company_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Companies
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Placement cell
@@ -259,15 +266,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../attachments/attachments_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Attachments
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../achievements/achievements_view.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Achievements
@@ -283,21 +282,37 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../contactInfo/contactInfo_view.html" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Contact Info
+                                    Contact info
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="placementMember_view.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Company
+                                    Placement Members
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="antiRagging_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Anti-Ragging
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="greivanceCell_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Grievance Cell </p>
+                            </a>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -312,149 +327,179 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Add Achievements </h1>
-                        </div><!-- /.col -->
+                            <h1 class="m-0 text-dark"> Grievance Cell Members List</h1>
+                        </div>
+                        <!-- /.col -->
                         <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li><a href="achievements_view.html"><i class="nav-icon fas fa-plus-circle">Back to
-                                            Achievements
-                                        </i></a></li>
-                            </ol>
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
+                            <a href="grievanceCellMembers_add.html">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
+                                    <li>Add New Member</li>
+                                </ol>
+                            </a>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
 
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <div class="row ">
+                    <div class="row justify-content-center">
                         <div class="col-12">
-                            <!--ur contents here-->
-                            <!-- jquery validation -->
-                            <div class="card card-primary">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title"> Grievance Cell Members Details</h3>
+                                </div>
                                 <!-- /.card-header -->
-                                <!-- form start -->
-                                <form role="form" id="quickForm">
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="col-4">
-                                                    <label for="Title"> Enter Title</label>
-                                                    <input type="text" class="form-control" id="Title"
-                                                        placeholder="Enter Title">
-                                                </div>
-
-                                                <div class="col-4">
-                                                    <label>Enter Category:</label>
-                                                    <select class="form-control select2" style="width: 100%;">
-                                                        <option selected="selected">Computer Engineering</option>
-                                                        <option>Electronics & Communication Engineering</option>
-                                                        <option>Electrical Engineering</option>
-                                                        <option>Civil Engineering</option>
-                                                        <option>Mechanical Engineering</option>
-                                                        <option>Administrative Department</option>
-                                                        <option>Workshop</option>
-                                                        <option>library</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-4">
-                                                    <label for="exampleInputFile">Enter Image File </label>
-                                                    <div class="input-group">
-                                                        <div class="custom-file">
-                                                            <input type="file" class="custom-file-input"
-                                                                id="exampleInputFile">
-                                                            <label class="custom-file-label"
-                                                                for="exampleInputFile">Choose
-                                                                file</label>
-                                                        </div>
-                                                        <div class="input-group-append">
-                                                            <span class="input-group-text" id="">Upload</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <table id="example1" class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Member Name</th>
+                                                        <th>Role</th>
+                                                        <th>Designation</th>
+                                                        <th>Department</th>
+                                                        <th>View</th>
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="grievanceCellMembers_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="grievanceCellMembers_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="grievanceCellMembers_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="grievanceCellMembers_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S. V. Patel</td>
+                                                        <td>Commettee Head</td>
+                                                        <td>Professor</td>
+                                                        <td>Computer</td>
+                                                        <td>
+                                                            <a href="" class="nav-icon fas fa-eye"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="grievanceCellMembers_add.html"
+                                                                class="nav-icon fas fa-edit"></a>
+                                                        </td>
+                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Member Name</th>
+                                                        <th>Role</th>
+                                                        <th>Designation</th>
+                                                        <th>Department</th>
+                                                        <th>View</th>
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
                                         </div>
-
-                                        <div class="form-group">
-                                            <div class="col-12">
-                                                <label for="details">Enter Details For Achievements</label>
-                                                <textarea class="textarea" id="details"
-                                                    placeholder="Place some text here"
-                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form>
-
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <button type="submit" class="btn btn-primary float-right">Upload</button>
-                                        </div>
-                                        <div class="col-6">
-                                            <a href="./achievements_view.html" class="btn btn-primary">Cancel</a>
-                                        </div>
+                                        <!-- /.card-body -->
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
-
         <!-- /.content-wrapper -->
-
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
         </aside>
         <!-- /.control-sidebar -->
     </div>
-
     <!-- ./wrapper -->
 
+
     <!-- jQuery -->
-    <!-- bs-custom-file-input -->
-    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-    <script src="../../plugins/select2/js/select2.full.min.js"></script>
-    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-    <!-- InputMask -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-    <!-- date-range-picker -->
-    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap color picker -->
-    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Bootstrap Switch -->
-    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- page script -->
     <script>
         $(function () {
-            // Summernote
-            $('.textarea').summernote()
-        })
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            bsCustomFileInput.init();
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
         });
     </script>
-
 </body>
 
 </html>
