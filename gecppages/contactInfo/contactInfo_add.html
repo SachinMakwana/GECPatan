@@ -400,36 +400,31 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Add Contact Information</h1>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li><a href="contactInfo_view.html"><i class="nav-icon fas fa-plus-circle">Back to
-                                            Contact Information
-                                        </i></a></li>
-                            </ol>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
+            
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <section class="content">
+            <section class="content" style="margin-top:20px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="contactInfo_view.html">
+                        <ol class="breadcrumb float-sm-right">
+                            <li style="margin-left: 00px;"><i class="nav-icon fas fa-minus-circle"></i></li>
+                            <li style="margin-left: px;">Back to Details</li>
+                        </ol>
+                        </a>
+                    </div>
+                    <div class="col-md-12">
+
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <!--ur contents here-->
                             <!-- jquery validation -->
                             <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Add Contact Information</h3>
+                                </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
                                 <form role="form" id="quickForm">
@@ -453,61 +448,60 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <!-- /.card-body -->
-                            <div class="row">
-                                <div class="col-6">
-                                    <button type="submit" class="btn btn-primary float-right">Upload</button>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <div class="input-group col-12">
+                                        <div class="col-sm-6"><button type="submit" class="btn btn-primary float-right col-md-2">Submit</button></div>
+                                        <div class="col-sm-6"><button type="clear" class="btn btn-default col-md-2">Clear</button></div>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <a href="./contactInfo_view.html" class="btn btn-primary">Cancel</a>
-                                </div>
-                            </div>
-
+                            </form>
                         </div>
-                        <!-- /.card -->
+                        
+
                     </div>
-
+                    <!-- /.card -->
                 </div>
-                <!-- /.row -->
-        </div>
-        <!-- /.container-fluid -->
-        </section>
-        <!-- /.content -->
-    </div>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-    </div>
-    <!-- ./wrapper -->
 
-    <!-- jQuery -->
-    <!-- bs-custom-file-input -->
-    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <script src="../../plugins/select2/js/select2.full.min.js"></script>
-    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-    <!-- InputMask -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-    <!-- date-range-picker -->
-    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap color picker -->
-    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Bootstrap Switch -->
-    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+            </div>
+            <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<!-- bs-custom-file-input -->
+<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<!-- date-range-picker -->
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
 </body>
 
 </html>
