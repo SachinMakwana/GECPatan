@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Add Anti-Ragging Cell Details</title>
+    <title>Add Women Cell Attachments Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -405,72 +405,88 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Add Women Cell Attachments Details</h1>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6">
+                            <a href="../womenCell/womenCellAttachments_view.html">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li><i class="nav-icon fas fa-minus-circle"></i></li>
+                                    <li>Back To Details</li>
+                                </ol>
+                            </a>
+                        </div>
+                       <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <section class="content" style="margin-top:20px;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="antiRagging_view.html">
-                            <ol class="breadcrumb float-sm-right">
-                                <li style="margin-left: 00px;"><i class="nav-icon fas fa-minus-circle"></i></li>
-                                <li style="margin-left: px;">Back to Details</li>
-                            </ol>
-                        </a>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="container-fluid">
-                            <div class="row ">
-                                <div class="col-12">
-                                    <!--ur contents here-->
-                                    <!-- jquery validation -->
-                                    <div class="card card-primary">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Add Anti-Ragging Cell Details</h3>
-                                        </div>
-                                        <!-- /.card-header -->
-                                        <!-- form start -->
-                                        <form role="form" id="quickForm">
-                                            <div class="card-body">
-                                                <div class="form-group">
-                                                    <div class="input-group col-12">
-                                                        <div class="card-body pad">
-                                                            <div class="mb-3">
-                                                                <textarea class="textarea" id="details"
-                                                                    placeholder="Place some text here"
-                                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                                            </div>
-                                                        </div>
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row ">
+                        <div class="col-12">
+                            <!--ur contents here-->
+                            <!-- jquery validation -->
+                            <div class="card card-primary">
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form role="form" id="quickForm">
+                                    <div class="card-body">
+                                        <div class="input-group">
+                                            <div class="col-6">
+                                                <label for="Name"> Enter Title</label>
+                                                <input type="text" class="form-control" id="Name"
+                                                    placeholder="Enter Title">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="exampleInputFile">Upload Attachment File</label>
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="exampleInputFile">
+                                                        <label class="custom-file-label" for="exampleInputFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" id="">Upload</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- /.card-body -->
-                                            <div class="card-footer">
-                                                <div class="input-group col-12">
-                                                    <div class="col-sm-6"><button type="submit"
-                                                            class="btn btn-primary float-right col-md-2">Submit</button>
-                                                    </div>
-                                                    <div class="col-sm-6"><button type="clear"
-                                                            class="btn btn-default col-md-2">Clear</button></div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
 
-                                </div>
+                                        </div>
+                                    </div>
+                                </form>
 
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </div>
+                        <div class="col-6">
+                            <a href="womenCellAttachments_view.html" class="btn btn-default">Clear</a>
+                        </div>
+                    </div>
             </section>
-            <!-- /.content -->
         </div>
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+
+    </div>
+    <!-- /.content -->
+    </div>
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
@@ -523,30 +539,3 @@
 </body>
 
 </html>
-
-<div class="col-md-12" style="margin-top:20px;">
-    <div class="card card-outline card-info">
-        <div class="card-header">
-            <!-- tools box -->
-            <div class="card-tools">
-                <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
-                    title="Collapse">
-                    <i class="fas fa-minus"></i></button>
-                <button type="button" class="btn btn-tool btn-sm" data-card-widget="remove" data-toggle="tooltip"
-                    title="Remove">
-                    <i class="fas fa-times"></i></button>
-            </div>
-            <!-- /. tools -->
-        </div>
-        <!-- /.card-header -->
-        <div class="card-body pad">
-            <div class="mb-3">
-                <textarea class="textarea" placeholder="Place some text here"
-                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-            </div>
-            <!-- <p class="text-sm mb-0">
-Editor <a href="https://github.com/summernote/summernote">Documentation and license
-information.</a>
-</p> -->
-        </div>
-    </div>
