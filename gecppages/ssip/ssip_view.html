@@ -7,21 +7,13 @@
     <title>View SSIP Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- custom css -->
@@ -39,7 +31,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a href="index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -49,7 +41,8 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -70,7 +63,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -86,7 +80,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -102,7 +97,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -159,7 +155,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../dashboard/dashboard.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Admin Panel</span>
             </a>
 
@@ -177,7 +174,8 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <li class="nav-item">
                             <a href="../dashboard/dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
@@ -403,14 +401,14 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">SSIP List</h1>
+                            <h1 class="m-0 text-dark">View SSIP Details</h1>
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6" style="margin-top:10px;">
                             <a href="../ssip/ssip_add.html">
                                 <ol class="breadcrumb float-sm-right">
                                     <li><i class="nav-icon fas fa-plus-circle"></i></li>
-                                    <li>Add New Details</li>
+                                    <li>Click to Edit Details</li>
                                 </ol>
                             </a>
                         </div>
@@ -428,119 +426,79 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">SSIP Details</h3>
-                                </div>
                                 <!-- /.card-header -->
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <div class="card-body">
-                                            <table id="example1" class="table table-bordered table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Committee Name</th>
-                                                        <th>Committee Role</th>
-                                                        <th>Edit</th>
-                                                        <th>Delete</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Kiran Patel</td>
-                                                        <td>Commettee Head</td>
-                                                        <td>
-                                                            <a href="ssip_add.html" class="nav-icon fas fa-edit"></a>
-                                                        </td>
-                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kiran Patel</td>
-                                                        <td>Commettee Head</td>
-                                                        <td>
-                                                            <a href="ssip_add.html" class="nav-icon fas fa-edit"></a>
-                                                        </td>
-                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kiran Patel</td>
-                                                        <td>Commettee Head</td>
-                                                        <td>
-                                                            <a href="ssip_add.html" class="nav-icon fas fa-edit"></a>
-                                                        </td>
-                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kiran Patel</td>
-                                                        <td>Commettee Head</td>
-                                                        <td>
-                                                            <a href="ssip_add.html" class="nav-icon fas fa-edit"></a>
-                                                        </td>
-                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Kiran Patel</td>
-                                                        <td>Commettee Head</td>
-                                                        <td>
-                                                            <a href="ssip_add.html" class="nav-icon fas fa-edit"></a>
-                                                        </td>
-                                                        <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                    </tr>
-                                                </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <th>Committee Name</th>
-                                                        <th>Committee Role</th>
-                                                        <th>Edit</th>
-                                                        <th>Delete</th>
-
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <h3>Student Start up & Innovation Details</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <p>Innovation is the key for every economy to grow, and innovation takes
+                                                place at every layer of the society. The government of India has
+                                                declared 2010-20 as the decade of innovation to unleash the creative
+                                                potential of every Indian. The Government of India has also set up the
+                                                "Atal Innovation Mission" and "Startup India, Stand-up India" mission to
+                                                spearhead innovation movement across the nation. The youth of the
+                                                country and the university system play a crucial role at every step to
+                                                shape the innovation ecosystem. To build startup and innovation culture
+                                                across universities is the key goal of Startup India action plan.
+                                            </p>
+                                            <p>In Gujarat, a large number of thesis and innovative ideas emerges every
+                                                year from nearly 1.4 million students from 60+ universities and
+                                                institutes of higher education in Gujarat. This source of new
+                                                innovations and startups catering to new products and services form the
+                                                base for the need of ecosystem of innovation policy in the state.</p>
+                                            <p> The education department of the state government is aiming to leverage
+                                                these avenues in a systematic manner by building student-centric
+                                                innovation and preincubation processes.Harnessing the creative potential
+                                                of young students across universities and educational institutions is
+                                                also necessary to generate an entrepreneurial model of inclusive
+                                                development.</p>
+                                            <p> Gujarat has witnessed huge industrial growth in last decade and hence it
+                                                is imperative need to have arobust system to support student innovation.
+                                                To facilitate and pre-incubate innovative ideas to go through a stage of
+                                                proof of concept, prototype, product, testing & trial, redesign and
+                                                development of utility, the student startup and innovation policy of the
+                                                state would help in building innovation and pre-incubation processes of
+                                                the state higher education.</p>
                                         </div>
-                                        <!-- /.card-body -->
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <text>Dr. Hitesh Panchal</text></br>
+                                        <text>SSIP Coordinator</text></br>
+                                        <text>Government Engineering College, Patan</text></br>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.card -->
                 </div>
-                <!-- /.container-fluid -->
             </section>
-            <!-- /.content -->
+            <!--ur contents here-->
         </div>
+    </div>
+    <!-- /.container-fluid -->
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+    <!-- /.content -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
 
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-    <!-- page script -->
-    <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-            });
-        });
-    </script>
 </body>
 
 </html>
