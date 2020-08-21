@@ -7,13 +7,11 @@
     <title>View Achievements Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
@@ -24,6 +22,7 @@
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
+
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -42,7 +41,8 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -63,7 +63,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -79,7 +80,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -95,7 +97,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -152,7 +155,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../dashboard/dashboard.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Admin Panel</span>
             </a>
 
@@ -170,7 +174,8 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <li class="nav-item">
                             <a href="../dashboard/dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
@@ -396,181 +401,98 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">View Achievements Details</h1>
+                            <h1 class="m-0 text-dark">View Achievements Details </h1>
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6" style="margin-top:10px;">
-                            <a href="achievements_add.html">
+                            <a href="../achievements/achievements_view.html">
                                 <ol class="breadcrumb float-sm-right">
-                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
-                                    <li>Add New Details</li>
+                                    <li style="margin-left: 00px;"><i class="nav-icon fas fa-minus-circle"></i></li>
+                                    <li style="margin-left: px;">Back to Details</li>
+                                </ol>
                                 </ol>
                             </a>
                         </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
-
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
                         <div class="col-12">
-                            <div class="card">
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>Category</th>
-                                                    <th>View</th>
-                                                    <th>Edit</th>
-                                                    <th>Delete</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href="achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href=""><i class="nav-icon fas fa-eye"></i></a></td>
-                                                    <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Computer lab no. 313.</td>
-                                                    <td>lab</td>
-                                                    <td><a href="achievements_list_view.htmll"><i
-                                                            class="nav-icon fas fa-eye"></i>
-                                                </td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                    <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                                </tr>
-
-                                            </tbody>
-                                    </table>
-
-                                </div>
-                                <!-- /.card-body -->
+                            <div class="card-header">
+                                <h3 class="card-title">View Achievements Details</h3>
                             </div>
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-            </section>
-        </div>
-        <!-- /.container-fluid -->
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="input-group">
+                                            <div class="col-6">
+                                                <div class="tab-pane active" id="achieve"><img
+                                                        src="../../dist/img/achievement.jpg" class="img-rounded"
+                                                        alt="Cinque Terre" width="500" height="280">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h6><b>Title:</b></h6><span>NSS Rani ki Vav Cleaniness</span>
+                                                <h6><b>Category:</b></h6><span>NSS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-4">
 
-        <!-- /.content -->
+                                        <h6><b>DETAIL DESCRIPTION:</b></h6> <span>Computer Science & Engineering
+                                            Department was established in year 2004 intake of 60 and from 2009
+                                            intake is increased to 120. It runs under graduate course in Computer
+                                            Science & Engineering. Primary objective of this programme is to develop
+                                            Computer Engineers with knowledge of software and hardware, responsible
+                                            for wide range of computer system design and development, built them as
+                                            dedicated and competent professionals for challenging world of varying
+                                            requirements of automation.
+
+                                            Computer Engineering Laboratories are outfitted with high performance
+                                            servers and computers with latest configurations. It includes C
+                                            programming lab, Computer network lab, Database lab, and Advanced
+                                            computing lab and Microprocessor lab. Entire campus is connected with
+                                            high speed fiber network having large capacity Data Server and 100 Mbps
+                                            Internet facility of 24×7 hrs.
+
+                                        </span>
+
+                                    </div>
+                                    <a href="../achievements/achievements_add.html">
+                                        <div class="input-group col-md-12 mt-4">
+                                            <div class="col-sm-6"><button type="submit"
+                                                    class="btn btn-primary float-right col-md-2"> Edit</button>
+
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- /.content-wrapper -->
+
+                <!-- Control Sidebar -->
+                <aside class="control-sidebar control-sidebar-dark">
+                    <!-- Control sidebar content goes here -->
+                </aside>
+                <!-- /.control-sidebar -->
+            </div>
+            <!-- jQuery -->
+            <script src="../../plugins/jquery/jquery.min.js"></script>
+            <!-- Bootstrap 4 -->
+            <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- DataTables -->
+            <!-- AdminLTE App -->
+            <script src="../../dist/js/adminlte.min.js"></script>
+            <!-- AdminLTE for demo purposes -->
+            <script src="../../dist/js/demo.js"></script>
+        </div>
     </div>
-    <!-- /.content-wrapper -->
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-    </div>
-    <!-- ./wrapper -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <!-- page script -->
-    <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "autoWidth": true,
-                "paging": true,
-                "lengthChange": true,
-                "searching": true,
-                "ordering": true,
-                "info": true
-            });
-        });
-    </script>
 </body>
 
 </html>
