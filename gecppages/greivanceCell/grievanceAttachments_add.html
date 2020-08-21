@@ -4,25 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>View SSIP Details</title>
+    <title>Add Grievance Cell Attachments Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <!-- custom css -->
-    <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
-
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -397,22 +405,22 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <div class="content">
+            <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">View SSIP Details</h1>
+                            <h1 class="m-0 text-dark">Add Grievance Cell Attachments Details</h1>
                         </div>
                         <!-- /.col -->
-                        <div class="col-sm-6" style="margin-top:10px;">
-                            <a href="../ssip/ssip_add.html">
+                        <div class="col-sm-6">
+                            <a href="../greivanceCell/grievanceAttachments_view.html">
                                 <ol class="breadcrumb float-sm-right">
-                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
-                                    <li>Click to Edit Details</li>
+                                    <li><i class="nav-icon fas fa-minus-circle"></i></li>
+                                    <li>Back To Details</li>
                                 </ol>
                             </a>
                         </div>
-                        <!-- /.col -->
+                       <!-- /.col -->
                     </div>
                     <!-- /.row -->
                 </div>
@@ -423,68 +431,58 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <div class="row justify-content-center">
+                    <div class="row ">
                         <div class="col-12">
-                            <div class="card">
+                            <!--ur contents here-->
+                            <!-- jquery validation -->
+                            <div class="card card-primary">
                                 <!-- /.card-header -->
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <h3>Student Start up & Innovation Details</h3>
-                                    </div>
+                                <!-- form start -->
+                                <form role="form" id="quickForm">
                                     <div class="card-body">
-                                        <div>
-                                            <p>Innovation is the key for every economy to grow, and innovation takes
-                                                place at every layer of the society. The government of India has
-                                                declared 2010-20 as the decade of innovation to unleash the creative
-                                                potential of every Indian. The Government of India has also set up the
-                                                "Atal Innovation Mission" and "Startup India, Stand-up India" mission to
-                                                spearhead innovation movement across the nation. The youth of the
-                                                country and the university system play a crucial role at every step to
-                                                shape the innovation ecosystem. To build startup and innovation culture
-                                                across universities is the key goal of Startup India action plan.
-                                            </p>
-                                            <p>In Gujarat, a large number of thesis and innovative ideas emerges every
-                                                year from nearly 1.4 million students from 60+ universities and
-                                                institutes of higher education in Gujarat. This source of new
-                                                innovations and startups catering to new products and services form the
-                                                base for the need of ecosystem of innovation policy in the state.</p>
-                                            <p> The education department of the state government is aiming to leverage
-                                                these avenues in a systematic manner by building student-centric
-                                                innovation and preincubation processes.Harnessing the creative potential
-                                                of young students across universities and educational institutions is
-                                                also necessary to generate an entrepreneurial model of inclusive
-                                                development.</p>
-                                            <p> Gujarat has witnessed huge industrial growth in last decade and hence it
-                                                is imperative need to have arobust system to support student innovation.
-                                                To facilitate and pre-incubate innovative ideas to go through a stage of
-                                                proof of concept, prototype, product, testing & trial, redesign and
-                                                development of utility, the student startup and innovation policy of the
-                                                state would help in building innovation and pre-incubation processes of
-                                                the state higher education.</p>
-                                        </div>
+                                        <div class="input-group">
+                                            <div class="col-6">
+                                                <label for="Name"> Enter Title</label>
+                                                <input type="text" class="form-control" id="Name"
+                                                    placeholder="Enter Title">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="exampleInputFile">Upload Attachment File</label>
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="exampleInputFile">
+                                                        <label class="custom-file-label" for="exampleInputFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" id="">Upload</span>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
+                                </form>
 
-                                    <strong>
-                                        <div class="form-group">
-                                            <text>Dr. Hitesh Panchal</text></br>
-                                            <text>SSIP Coordinator</text></br>
-                                            <text>Government Engineering College, Patan</text></br>
-                                        </div>
-                                    </strong>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!--ur contents here-->
-        </div>
-    </div>
-    <!-- /.container-fluid -->
 
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </div>
+                        <div class="col-6">
+                            <a href="grievanceAttachments_view.html" class="btn btn-default">Clear</a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+    </div>
     <!-- /.content -->
-    <!-- Control Sidebar -->
+    </div>
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
     </aside>
@@ -494,13 +492,50 @@
 
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- DataTables -->
+    <!-- ChartJS -->
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="../../dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('.textarea').summernote()
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            bsCustomFileInput.init();
+        });
+    </script>
+
 </body>
 
 </html>
