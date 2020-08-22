@@ -4,37 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Faculty Details</title>
+    <title>Add Greivance Cell Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Select2 -->
-    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- summernote -->
     <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link href="../../dist/css/custom.css" rel="stylesheet">
+
 </head>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
-
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -43,7 +39,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a href="index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -53,7 +49,8 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -74,7 +71,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -90,7 +88,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -106,7 +105,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -163,7 +163,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../dashboard/dashboard.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Admin Panel</span>
             </a>
 
@@ -181,7 +182,8 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <li class="nav-item">
                             <a href="../dashboard/dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
@@ -402,203 +404,177 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Faculty Details</h1>
-                        </div>
-                        <!-- /.col -->
+            <section class="content" style="margin-top:20px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb float-sm-right">
+                            <li style="margin-left: 00px;"><a href="dept_view.html"><i
+                                        class="nav-icon fas fa-minus-circle"></i> </a>
+                            </li>
+                            <li style="margin-left: px;"><a href="../placement/placement_view.html">Back to
+                                    Details</a></li>
+                        </ol>
                     </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
-
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- your contents here -->
-                            <!-- form start -->
-                            <div class="card card-primary">
-                                <form role="form">
-                                    <div class="card-body">
-                                        <div class="form-group">
-
-                                            <!-- Name Controls -->
-                                            <div class="form-group">
-                                                <div class="input-group col-12">
-                                                    <div class="col-md-1">
-                                                        <label for="ddlprefix">Prefix</label>
-                                                        <select class="form-control select2" style="width: 100%;" id="ddlprefix" disabled>
-                                                            <option selected="selected">Mr</option>
-                                                            <option>Mr</option>
-                                                            <option>Ms</option>
-                                                            <option>Mrs</option>
-                                                            <option>Dr</option>
-                                                            <option>Prof</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <label for="fname">First Name</label>
-                                                        <input type="text" class="form-control" id="fname" placeholder="First Name" disabled>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <label for="lname">Last Name</label>
-                                                        <input type="text" class="form-control" id="lname" placeholder="Last Name" disabled>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <label for="surname">Surname</label>
-                                                        <input type="text" class="form-control" id="surname" placeholder="Surname" disabled>
-                                                    </div>
-
-                                                    <div class="col-md-2">
-                                                        <label for="dateofjoining">Date Of Joining</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text"><i
-                                                                        class="far fa-calendar-alt"></i></span>
-                                                            </div>
-                                                            <input id="dateofjoining" type="text" class="form-control datemask" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                    <div class="col-md-12">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Placement Details</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="col-6 border-right">
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Company Name
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    L & T PVT LTD
+                                                </span>
                                             </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group col-12">
-                                                    <div class="col-md-2">
-                                                        <label for="ddldesgn">Designation</label>
-                                                        <select class="form-control select2" style="width: 100%;" id="ddldesgn" disabled>
-                                                            <option selected="selected">Professor</option>
-                                                            <option>Professor</option>
-                                                            <option>HOD</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="col-md-2">
-                                                        <label for="qual">Qualification</label>
-                                                        <input type="text" class="form-control" id="qual" placeholder="M.E." disabled>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <label for="exp">Experience</label>
-                                                        <input type="text" class="form-control" id="exp" placeholder="2 Years" disabled>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <label for="exp">Area Of Interest</label>
-                                                        <input type="text" class="form-control" id="exp" placeholder="AI And ML" disabled>
-                                                    </div>
-                                                </div>
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Department
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    Civil
+                                                </span>
                                             </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group col-12">
-                                                    <div class="col-md-2">
-                                                        <label for="ddlgender">Gender</label>
-                                                        <select class="form-control select2" style="width: 100%;" id="ddlgender" disabled>
-                                                            <option selected="selected">Other</option>
-                                                            <option>Male</option>
-                                                            <option>Female</option>
-                                                        </select>
-                                                    </div>
-
-
-                                                    <div class="col-md-2">
-                                                        <label for="dateofbirth">Date Of Birth</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text"><i
-                                                                        class="far fa-calendar-alt"></i></span>
-                                                            </div>
-                                                            <input id="dateofbirth" type="text" class="form-control datemask" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-2">
-                                                        <label for="maritialstatus">Maritial Status</label>
-                                                        <select class="form-control select2" style="width: 100%;" id="maritialstatus" disabled>
-                                                            <option selected="selected">Other</option>
-                                                            <option>Married</option>
-                                                            <option>Unmarried</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="col-md-3">
-                                                        <label for="department">Department</label>
-                                                        <select class="form-control select2" style="width: 100%;" id="department" disabled>
-                                                            <option selected="selected">Computer</option>
-                                                            <option>Civil</option>
-                                                            <option>Electrical</option>
-                                                            <option>Mechanical</option>
-                                                            <option>Electronics & Communication</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <label for="email">Email Address</label>
-                                                        <input type="email" class="form-control" id="email" placeholder="gecp@gmail.com" disabled>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group col-12">
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <label for="contact1">Contact No</label>
-                                                                <input type="tel" class="form-control" id="contact1" placeholder="Contact No" disabled>
-                                                            </div>
-                                                            <div>
-                                                                <label for="contact2">Phone No</label>
-                                                                <input type="tel" class="form-control" id="contact2" placeholder="Phone No" disabled>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <label for="address">Address</label>
-                                                        <textarea type="text" class="form-control" id="address" rows="4" placeholder="24, Sardar Society, NR. Rajesh Tower, Gotri, Vadodara - 380061" disabled></textarea>
-                                                    </div>
-                                                </div>
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Students Taken
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    15
+                                                </span>
                                             </div>
                                         </div>
+                                        <div class="col-6 border-left">
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Date Of Campus
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    16/07/2019
+                                                </span>
+                                            </div>
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Lowest Package
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    1,00,000₹
+                                                </span>
+                                            </div>
+                                            <div class="raw">
+                                                <label class="col-5 h5 text-muted">
+                                                    Highest Package
+                                                </label>
+                                                <span class="col-7 h5">
+                                                    1,50,000₹
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <label class="card-title text-muted">
+                                                    List Of Taken Students :
+                                                </label>
+                                            </div>
+                                            <div class="card-body">
+                                                <table id="example2" class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Enrollment No</th>
+                                                            <th>Name</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>180223107003</td>
+                                                            <td>Darji Dhaval C.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Enrollment No</th>
+                                                            <th>Name</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
 
-                                    <div class="card-footer">
-                                        <div class="input-group col-12">
-                                            <div class="col-sm-6"><a href="./faculty_edit.html" class="btn btn-primary float-right col-md-3">Edit Details</a></div>
-                                            <div class="col-sm-6"><a href="./faculty_view.html" class="btn btn-primary col-md-2">Back</a></div>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
-                            <!-- /.card -->
-
+                            <!-- /.container-fluid -->
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
             </section>
-            <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
-       
+        <!-- /.content -->
+    </div>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+
+    </div>
+
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
@@ -606,42 +582,37 @@
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Select2 -->
-    <script src="../../plugins/select2/js/select2.full.min.js"></script>
-    <!-- InputMask -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-    <script src="../../plugins/inputmask/jquery.inputmask.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
     <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-
+    <!-- DataTables -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <script>
-        $(function() {
-            //Initialize Select2 Elements
-            $('.select2').select2()
-
-            //Initialize Select2 Elements
-            $('.select2bs4').select2({
-                theme: 'bootstrap4'
+        $(function () {
+            $("#example2").DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
             })
-
-            //Datemask dd/mm/yyyy
-            $('.datemask').inputmask('dd/mm/yyyy', {
-                'placeholder': 'dd/mm/yyyy'
-            })
-        })
+        });
     </script>
+
 </body>
 
 </html>

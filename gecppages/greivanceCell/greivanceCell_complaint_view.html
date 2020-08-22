@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>View Achievements Details</title>
+    <title>Add Greivance Cell Details</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -13,19 +13,20 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-    <link href="../../dist/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -403,165 +404,162 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">View Achievements Details</h1>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-sm-6" style="margin-top:10px;">
-                            <a href="achievements_add.html">
-                                <ol class="breadcrumb float-sm-right">
-                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
-                                    <li>Add New Details</li>
-                                </ol>
-                            </a>
-                        </div>
-                        <!-- /.col -->
+            <section class="content" style="margin-top:20px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb float-sm-right">
+                            <li style="margin-left: 00px;"><a href="dept_view.html"><i
+                                        class="nav-icon fas fa-minus-circle"></i> </a>
+                            </li>
+                            <li style="margin-left: px;"><a href="../greivanceCell/greivanceCell_view.html">Back to Details</a></li>
+                        </ol>
                     </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
-
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <div class="card">
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table id="example2" class="table table-bordered table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Title</th>
-                                                <th>Category</th>
-                                                <th>View</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="../achievements/achievements_details.html"><i class="nav-icon fas fa-eye"></i></a></td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Computer lab no. 313.</td>
-                                                <td>lab</td>
-                                                <td><a href="achievements_list_view.htmll"><i
-                                                            class="nav-icon fas fa-eye"></i>
-                                                </td>
-                                                <td><a href="achievements_add.html"><i
-                                                            class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
+                    <div class="col-md-12">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Details Of Grievance Complaint</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Enrollment No.
+                                        </label>
+                                        <span class="col-9">
+                                            180220107050
+                                        </span>
+                                    </div>
                                 </div>
-                                <!-- /.card-body -->
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Reason
+                                        </label>
+                                        <span class="col-9">
+                                            Drinking Water Is Not Clean.
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Recieved By
+                                        </label>
+                                        <span class="col-9">
+                                            Prof. Jay Darji
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Complaint Description
+                                        </label>
+                                        <span class="col-9">
+                                            Dear Sir,
+                                            I am in Computer Department, The water supply is usually very
+                                            dirty and smelly.Due to this dirty water people are suffering through
+                                            lot of problems like stomach ache and Dirrhoea.
+
+                                            This water is creating many health issues therefore,i request the
+                                            concerned authorities to supply clean and hygienic water to all
+                                            departments.
+
+                                            Hope for a quick and positive response.
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Complaint Status
+                                        </label>
+                                        <span class="col-9">
+                                            Pending
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Date Of Complaint
+                                        </label>
+                                        <span class="col-9">
+                                            16/02/2020
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label class="col-3">
+                                            Remarks
+                                        </label>
+                                        <span class="col-9">
+                                            No Remarks
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="input-group col-12 justify-content-center">
+                                    <div><a href="../greivanceCell/greivanceCell__add.html" class="btn btn-primary">Edit Progress</a></div>
+                                </div>
                             </div>
                         </div>
-                        <!-- /.card -->
+                        <!-- /.card-body -->
                     </div>
-                    <!-- /.col -->
+                    <!-- /.card -->
+
                 </div>
-                <!-- /.row -->
+                <!-- /.container-fluid -->
             </section>
         </div>
-        <!-- /.container-fluid -->
-
         <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
-    <!-- Control Sidebar -->
+
+
+    </div>
+
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
     </aside>
     <!-- /.control-sidebar -->
+    </div>
     <!-- ./wrapper -->
+
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
     <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
@@ -570,24 +568,18 @@
     <script src="../../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-    <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <script>
         $(function () {
-            $("#example2").DataTable({
-                "paging": true,
-                "lengthChange": true,
-                "searching": true,
-                "ordering": true,
-                "info": true,
-                "autoWidth": true,
-                "responsive": true,
-            });
+            // Summernote
+            $('.textarea').summernote()
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            bsCustomFileInput.init();
         });
     </script>
+
 </body>
 
 </html>
