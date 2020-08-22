@@ -4,23 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>VIEW COLLEGE DETAILS</title>
+    <title>DEPARTMENT DETAILS</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-    <!-- Google Font: Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <!--custom css-->
-    <link href="../../dist/css/custom.css" rel="stylesheet">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -33,7 +31,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a href="../../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -43,11 +41,12 @@
             <!-- SEARCH FORM -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                        aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -64,7 +63,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -80,7 +80,8 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -96,11 +97,13 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                    class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
-                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                        <span class="float-right text-sm text-warning"><i
+                                                class="fas fa-star"></i></span>
                                     </h3>
                                     <p class="text-sm">The subject goes here</p>
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
@@ -151,9 +154,10 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../dashboard/dashboard.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Admin Panel</span>
+            <a href="../../index.html" class="brand-link">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">AdminLTE 3</span>
             </a>
 
             <!-- Sidebar -->
@@ -161,18 +165,22 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="../../dist/img/gecplogo.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">GEC PATAN</a>
+                        <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+
+                        <li class="nav-item has-treeview">
+
                         <li class="nav-item">
-                            <a href="../dashboard/dashboard.html" class="nav-link">
+                            <a href="../../index.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Dashboard
@@ -196,15 +204,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../faculty/faculty_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Faculty Details
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../department/dept_view.html" class="nav-link">
+                            <a href="dept_view.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Department
@@ -212,18 +212,75 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../subject/subject_view.html" class="nav-link">
+                            <a href="../faculty/faculty_view.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Subjects Lists
+                                    Faculty
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../labAndWorkshop/labAndWorkshop_view.html" class="nav-link">
+                            <a href="widgets.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Lab and workshops
+                                    Lab and Workshps
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../placement/placement_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Placement cell
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../subject/subject_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Subject list
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gallery/gallery_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Gallery
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../images/images_view.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Images
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Achievements
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about college/about_add.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Women Grievance Cell
+                                </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about college/about_add.html" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Anti Ragging
                                 </p>
                             </a>
                         </li>
@@ -235,269 +292,125 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="../placement/placement_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Placement cell
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../placement/placement_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Placement Details</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../placementMember/placementMember_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Members Details</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="../womenCell/womenCell_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Women cell
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../womenCell/womenCell_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Women Cell Details</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../womenCell/womenCellMembers_details.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Members Details</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="../ssip/ssip_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    SSIP cell
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../ssip/ssip_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>SSIP Details</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../ssip/ssipMembers_details.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Members Details</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="../antiRagging/antiRagging_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Anti Ragging cell
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../antiRagging/antiRagging_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Anti Ragging Details</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../antiRagging/antiRaggingMembers_details.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Members Details</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="../greivanceCell/greivanceCell_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Grievance cell
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../greivanceCell/greivanceCell_view.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Grievance Details</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../greivanceCell/grievanceCellMemebers_details.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Members Details</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
-                            <a href="../images/images_view.html" class="nav-link">
+                            <a href="widgets.html" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Images
+                                    Contact us
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="../gallery/gallery_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    College Gallery
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../achievements/achievements_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Achievements
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../contactInfo/contactInfo_view.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Contact info
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
 
+        <!-- Content Wrapper. Contains page content -->
 
-
-        <!-- Main content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>College Details</h1>
-                        </div>
-                        <div class="col-sm-6" style="margin-top:10px;">
-                            <a href="about_add.html">
-                                <ol class="breadcrumb float-sm-right">
-                                    <li><i class="nav-icon fas fa-plus-circle"></i></li>
-                                    <li>Add New Details</li>
-                                </ol>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="container-fluid">
-                            <!-- <div class="row">
-     <form>
-      <button type="submit" class="btn btn-info" style="margin-left: 916px;margin-top: -56px;"><a href="about.html" style="color: white;">ADD NEW DETAILS</a></button>
-                    
-          
-          </form>
-  </div>
-  </div> -->
-                            <!-- <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">DataTables</li>
-              </ol>
-            </div> -->
-                        </div>
+            <!-- <h3 style="margin-left: 15px;">DEPARTMENT</h3> -->
+            <section class="content" style="margin-top:20px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb float-sm-right">
+                            <li style="margin-left: 00px;"><a href="dept_view.html"><i
+                                        class="nav-icon fas fa-minus-circle"></i> </a>
+                            </li>
+                            <li style="margin-left: px;"><a href="dept_view.html">Back to Details</a></li>
+                        </ol>
                     </div>
-                    <!-- /.container-fluid -->
-            </section>
-
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h1 class="card-title" style="font-size: 25px;">List Of College Details</h1>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table id="example2" class="table table-bordered table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Title</th>
-                                                <th>Category</th>
-                                                <th>View </th>
-                                                <th>Edit </th>
-                                                <th>Delete</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>College</td>
-                                                <td>College</td>
-                                                <td><i class="nav-icon fas fa-eye"></i></td>
-                                                <td><a href="about_add.html"><i class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>Anti Ragging</td>
-                                                <td>Anti Ragging</td>
-                                                <td><i class="nav-icon fas fa-eye"></i></td>
-                                                <td><a href="about_add.html"><i class="nav-icon fas fa-edit"></i></a></td>
-                                                <td><a href=""><i class="nav-icon fas fa-trash"></i></a></td>
-
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Title</th>
-                                                <th>Category</th>
-                                                <th>View </th>
-                                                <th>Edit </th>
-                                                <th>Delete</th>
-
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                                <!-- /.card-body -->
+                    <div class="col-md-12">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">About College</h3>
                             </div>
-                            <!-- /.card -->
+                            <div class="card-body">
+                                <div class="raw">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="input-group justify-content-center">
+                                                <div class="col-8">
+                                                    <img alt="college" width="100%" class="img-thumbnail"
+                                                        src="../../dist/img/GECPatan.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="h4 text-danger">
+                                                ABOUT COLLEGE
+                                            </label>
+                                            <hr>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                Government Engineering College, Patan was established in April 2004 with
+                                                three branches Computer Engineering, Electronics and Communication
+                                                Engineering and Mechanical Engineering each with intake of 60 totaling
+                                                to 180. The institute was initially functioning in the premises of the
+                                                K. D. Polytechnic, Patan temporarily. It was shifted to its own newly
+                                                built up green premise in August 2008 at Katpur village on Chanasma-
+                                                Patan road 8 kms before Patan. Two more branches of Electrical
+                                                Engineering and Civil Engineering each with intake of 60 were introduced
+                                                from June- 2009 and the intake of all three existing branches were
+                                                increased to 120. Currently, institute functions with total intake of
+                                                480 in five different branches.
+                                            </span>
+                                        </div>
+                                        <div class="mt-5">
+                                            <span>
+                                                <span class="font-weight-bold">Mandate : </span> To impart the technical
+                                                education as per the state and national
+                                                policy which satisfy the current needs of the society, to interact with
+                                                the industry and research organizations for the integrated growth, to
+                                                make the liaison with statutory and professional organizations and to
+                                                provide the training and research opportunities to the student and
+                                                faculties in best possible manner.
+                                            </span>
+                                        </div>
+                                        <div class="mt-3">
+                                            <span>
+                                                <span class="font-weight-bold">Vision : </span>To prepare Human Resource
+                                                with value based competency for technical advancements and growth of
+                                                society.
+                                            </span>
+                                        </div>
+                                        <div class="mt-3">
+                                            <span class="font-weight-bold">Mission:</span>
+                                            <div>
+                                                <ol type="1">
+                                                    <li>To deliver technical programs and services to cater the current
+                                                        needs of society and industry.</li>
+                                                    <li>Helping industries in solving challenges by means of providing
+                                                        best technical human resources.</li>
+                                                    <li>To contribute in sustainable growth of society.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="input-group col-md-12 mt-4">
+                                        <div class="col-sm-6"><a href="../about college/about_add.html" class="btn btn-primary float-right">Edit</a>
 
-                            <!-- /.card-body -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <!-- /.card -->
+                        <!-- /.card-body -->
+
                     </div>
-                    <!-- /.col -->
                 </div>
-                <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
             </section>
-            <!-- /.content -->
         </div>
+
+
+
+
+        <!-- /.content-wrapper -->
+
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
@@ -507,36 +420,29 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
+    <!-- bs-custom-file-input -->
+    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
-    <!-- page script -->
-    <script>
-        $(function() {
-            $("#example2").DataTable({
-                "responsive": true,
-                "autoWidth": false,
-            });
-            $('#example1').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
-        });
-    </script>
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
 </body>
 
 </html>
